@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Documentación Jugamax',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url: 'https://jugamax.github.io',
@@ -69,25 +69,32 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    defaultMode: 'dark',
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
-        alt: 'My Site Logo',
-        src: '../img/logo.svg',
+        alt: 'Jugamax Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'documentacionSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentación',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'descTecnicaSidebar',
+        //   position: 'left',
+        //   label: 'Descripción Técnica',
+        // },
+        // {to: '/blog', label: 'Blog', position: 'left'},
+        // {
+        //   href: 'https://github.com/facebook/docusaurus',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
