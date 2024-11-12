@@ -76,5 +76,5 @@ npm run commons-dev
 ```
 
 Es importante acotar que, si los comandos generan error al ejecutarse, se deben volver a correr, en caso que persista el problema intentar con sus equivalente en `yarn` para ello basta con sustituir la palabra `yarn` por `npm`.
- 
+
 Si posees `Laragon` (Windows) basta con tener marcada la opción de configuración “`Crear automáticamente hosts virtuales`” para que se cree el virtual host automáticamente. Si posees `Herd` (MacOS y Windows) también se crearán los host de manera automática. De lo contrario deben crearse manualmente.

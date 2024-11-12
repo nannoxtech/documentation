@@ -72,4 +72,4 @@ php artisan migrate:refresh --seed
 
 Luego de configurar lo relacionado con la base de datos, se debe correr el proyecto para que el proyecto pueda funcionar.
 
-Si posees Laragon (Windows) basta con tener marcada la opción de configuración “Crear automáticamente hosts virtuales” para que se cree el virtual host automáticamente. Si posees Herd (MacOS y Windows) también se crearán los host de manera automática. De lo contrario deben crearse manualmente.
+Si posees `Laragon` (Windows) basta con tener marcada la opción de configuración “`Crear automáticamente hosts virtuales`” para que se cree el virtual host automáticamente. Si posees `Herd` (MacOS y Windows) también se crearán los host de manera automática. De lo contrario deben crearse manualmente.
