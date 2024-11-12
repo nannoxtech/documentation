@@ -11,7 +11,7 @@ Payments es una pasarela intermedia que permite comunicar `Pam` con los proveedo
 Se puede utilizar cualquier consola o Shell para ejecutar el siguiente comando con la URL del repo correspondiente:
 
 ```bash
-git clone ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/betpay
+git clone ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/nt-payments
 ```
 
 Una vez clonado el proyecto, se debe ejecutar el siguiente comando, para instalar todas las dependencias del proyecto:

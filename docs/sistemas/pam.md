@@ -11,7 +11,7 @@ PAM es el proyecto que sirve como núcleo del sistema. Los usuarios interactúan
 Se puede utilizar cualquier consola o Shell para ejecutar el siguiente comando con la URL del repo correspondiente:
 
 ```bash
-git clone ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/pam
+git clone ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/nt-pam
 ```
 
 Una vez clonado el proyecto, se debe ejecutar el siguiente comando, para instalar todas las dependencias del proyecto:

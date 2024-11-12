@@ -9,7 +9,7 @@ Se puede utilizar cualquier consola o Shell para ejecutar el siguiente comando c
 ### Clonar proyecto
 
 ```bash
-git clone ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/dotpanel
+git clone ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/nt-backoffice
 ```
 
 Una vez clonado el proyecto, se debe ejecutar el siguiente comando, para instalar todas las dependencias del proyecto:
