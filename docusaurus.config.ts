@@ -5,19 +5,19 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Documentación Jugamax',
+  title: 'Documentación Nannoxtech',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
-  url: 'https://jugamax.github.io',
+  url: 'https://nannoxtech.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/documentacion/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'jugamax', // Usually your GitHub org/user name.
+  organizationName: 'nannoxtech', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
