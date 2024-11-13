@@ -12,7 +12,7 @@ El computador debe contar con las siguientes herramientas instaladas:
 
 - Composer
 - Git
-- NodeJS, usar `nvm` o `fpm` para gestionar las versiones de node en el sistema ya que se puede necesitar versiones distintas entre proyectos. Cada uno de los sistemas cuenta con la versión de NodeJS que se debe instalar en el fichero `.nvmrc`
+- NodeJS, usar `nvm` o `fnm` para gestionar las versiones de node en el sistema ya que se puede necesitar versiones distintas entre proyectos. Cada uno de los sistemas cuenta con la versión de NodeJS que se debe instalar en el fichero `.nvmrc`
 - PHP 8.1 como mínimo con las siguientes extensiones instaladas
   - php-cli
   - php-curl
