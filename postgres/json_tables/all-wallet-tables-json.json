@@ -1,0 +1,760 @@
+{
+  "actions": {
+    "name": "actions",
+    "description": "ths is the comment of actions table",
+    "columns": {
+      "id": {
+        "type": "smallint",
+        "nullable": false,
+        "maxLength": null,
+        "default": "nextval('wallet.actions_id_seq'::regclass)",
+        "pk": "actions",
+        "fk": "actions"
+      },
+      "name": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 50,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "currencies": {
+    "name": "currencies",
+    "description": "No description available",
+    "columns": {
+      "iso": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 3,
+        "default": null,
+        "pk": "currencies",
+        "fk": "currencies"
+      },
+      "name": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 50,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "created_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "updated_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "failed_jobs": {
+    "name": "failed_jobs",
+    "description": "No description available",
+    "columns": {
+      "id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": "nextval('wallet.failed_jobs_id_seq'::regclass)",
+        "pk": "failed_jobs",
+        "fk": "failed_jobs"
+      },
+      "connection": {
+        "type": "text",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "queue": {
+        "type": "text",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "payload": {
+        "type": "text",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "exception": {
+        "type": "text",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "failed_at": {
+        "type": "timestamp without time zone",
+        "nullable": false,
+        "maxLength": null,
+        "default": "CURRENT_TIMESTAMP",
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "migrations": {
+    "name": "migrations",
+    "description": "No description available",
+    "columns": {
+      "id": {
+        "type": "integer",
+        "nullable": false,
+        "maxLength": null,
+        "default": "nextval('wallet.migrations_id_seq'::regclass)",
+        "pk": "migrations",
+        "fk": "migrations"
+      },
+      "migration": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 255,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "batch": {
+        "type": "integer",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "oauth_access_tokens": {
+    "name": "oauth_access_tokens",
+    "description": "No description available",
+    "columns": {
+      "id": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 100,
+        "default": null,
+        "pk": "oauth_access_tokens",
+        "fk": "oauth_access_tokens"
+      },
+      "user_id": {
+        "type": "bigint",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "client_id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "name": {
+        "type": "character varying",
+        "nullable": true,
+        "maxLength": 255,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "scopes": {
+        "type": "text",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "revoked": {
+        "type": "boolean",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "created_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "updated_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "expires_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "oauth_auth_codes": {
+    "name": "oauth_auth_codes",
+    "description": "No description available",
+    "columns": {
+      "id": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 100,
+        "default": null,
+        "pk": "oauth_auth_codes",
+        "fk": "oauth_auth_codes"
+      },
+      "user_id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "client_id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "scopes": {
+        "type": "text",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "revoked": {
+        "type": "boolean",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "expires_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "oauth_clients": {
+    "name": "oauth_clients",
+    "description": "No description available",
+    "columns": {
+      "id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": "nextval('wallet.oauth_clients_id_seq'::regclass)",
+        "pk": "oauth_clients",
+        "fk": "oauth_clients"
+      },
+      "user_id": {
+        "type": "bigint",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "name": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 255,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "secret": {
+        "type": "uuid",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "redirect": {
+        "type": "text",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "personal_access_client": {
+        "type": "boolean",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "password_client": {
+        "type": "boolean",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "revoked": {
+        "type": "boolean",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "created_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "updated_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "provider": {
+        "type": "character varying",
+        "nullable": true,
+        "maxLength": 255,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "oauth_personal_access_clients": {
+    "name": "oauth_personal_access_clients",
+    "description": "No description available",
+    "columns": {
+      "id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": "nextval('wallet.oauth_personal_access_clients_id_seq'::regclass)",
+        "pk": "oauth_personal_access_clients",
+        "fk": "oauth_personal_access_clients"
+      },
+      "client_id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "created_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "updated_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "oauth_refresh_tokens": {
+    "name": "oauth_refresh_tokens",
+    "description": "No description available",
+    "columns": {
+      "id": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 100,
+        "default": null,
+        "pk": "oauth_refresh_tokens",
+        "fk": "oauth_refresh_tokens"
+      },
+      "access_token_id": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 100,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "revoked": {
+        "type": "boolean",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "expires_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "transaction_types": {
+    "name": "transaction_types",
+    "description": "No description available",
+    "columns": {
+      "id": {
+        "type": "smallint",
+        "nullable": false,
+        "maxLength": null,
+        "default": "nextval('wallet.transaction_types_id_seq'::regclass)",
+        "pk": "transaction_types",
+        "fk": "transaction_types"
+      },
+      "name": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 50,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "transactions": {
+    "name": "transactions",
+    "description": "No description available",
+    "columns": {
+      "id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": "nextval('wallet.transactions_id_seq'::regclass)",
+        "pk": "transactions",
+        "fk": "transactions"
+      },
+      "wallet_id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": "transactions",
+        "fk": "wallets"
+      },
+      "amount": {
+        "type": "double precision",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "balance": {
+        "type": "double precision",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "provider_id": {
+        "type": "smallint",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "transaction_type_id": {
+        "type": "smallint",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": "transactions",
+        "fk": "transaction_types"
+      },
+      "action_id": {
+        "type": "smallint",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": "transactions",
+        "fk": "actions"
+      },
+      "currency_iso": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 3,
+        "default": null,
+        "pk": "transactions",
+        "fk": "currencies"
+      },
+      "data": {
+        "type": "json",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "created_at": {
+        "type": "timestamp without time zone",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "updated_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "provider_transaction": {
+        "type": "character varying",
+        "nullable": true,
+        "maxLength": 255,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "external_provider_id": {
+        "type": "integer",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "balances": {
+        "type": "json",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "users": {
+    "name": "users",
+    "description": "No description available",
+    "columns": {
+      "id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": "nextval('wallet.users_id_seq'::regclass)",
+        "pk": "users",
+        "fk": "users"
+      },
+      "user": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "username": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 30,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "password": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 60,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "oauth_client_id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": "users",
+        "fk": "oauth_clients"
+      },
+      "created_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "updated_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "whitelabel_id": {
+        "type": "integer",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  },
+  "wallets": {
+    "name": "wallets",
+    "description": "No description available",
+    "columns": {
+      "id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": "nextval('wallet.wallets_id_seq'::regclass)",
+        "pk": "wallets",
+        "fk": "wallets"
+      },
+      "user_id": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": null,
+        "pk": "wallets",
+        "fk": "users"
+      },
+      "quantity": {
+        "type": "bigint",
+        "nullable": false,
+        "maxLength": null,
+        "default": "0",
+        "pk": null,
+        "fk": null
+      },
+      "currency_iso": {
+        "type": "character varying",
+        "nullable": false,
+        "maxLength": 3,
+        "default": null,
+        "pk": "wallets",
+        "fk": "currencies"
+      },
+      "balance": {
+        "type": "double precision",
+        "nullable": false,
+        "maxLength": null,
+        "default": "'0'::double precision",
+        "pk": null,
+        "fk": null
+      },
+      "balance_locked": {
+        "type": "double precision",
+        "nullable": false,
+        "maxLength": null,
+        "default": "'0'::double precision",
+        "pk": null,
+        "fk": null
+      },
+      "created_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "updated_at": {
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "bonus": {
+        "type": "boolean",
+        "nullable": false,
+        "maxLength": null,
+        "default": "false",
+        "pk": null,
+        "fk": null
+      },
+      "provider_type_id": {
+        "type": "smallint",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      },
+      "parent_wallet": {
+        "type": "bigint",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": "wallets",
+        "fk": "wallets"
+      },
+      "campaign_id": {
+        "type": "bigint",
+        "nullable": true,
+        "maxLength": null,
+        "default": null,
+        "pk": null,
+        "fk": null
+      }
+    }
+  }
+}

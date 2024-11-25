@@ -1,0 +1,70 @@
+{
+  "name": "users",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('wallet.users_id_seq'::regclass)",
+      "pk": "users",
+      "fk": "users"
+    },
+    "user": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "username": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 30,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "password": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 60,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "oauth_client_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "users",
+      "fk": "oauth_clients"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}
