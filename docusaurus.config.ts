@@ -77,9 +77,15 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'documentacionSidebar',
+          sidebarId: 'systemSidebar',
           position: 'left',
-          label: 'Documentación',
+          label: 'Sistema',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'dataModelSidebar',
+          position: 'left',
+          label: 'Modelo de Datos',
         },
         // {
         //   type: 'docSidebar',

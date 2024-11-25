@@ -1,0 +1,8 @@
+{
+  "label": "Configuración",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Documentación de algunas de las configuraciones necesarias"
+  }
+}
