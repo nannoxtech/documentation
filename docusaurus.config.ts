@@ -109,7 +109,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/documentacion/docs/intro',
+              to: '#',
             },
           ],
         },
@@ -117,16 +117,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'External link',
+              href: '#',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'External link',
+              href: '#',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'External link',
+              href: '#',
             },
           ],
         },
@@ -138,9 +138,9 @@ const config: Config = {
               to: '/blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+              label: 'External link',
+              href: '#',
+            }
           ],
         },
       ],
