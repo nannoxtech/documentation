@@ -1,0 +1,150 @@
+{
+  "name": "campaigns",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.campaigns_id_seq'::regclass)",
+      "pk": "campaigns",
+      "fk": "campaigns"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 100,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "data": {
+      "type": "json",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "device": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "start_date": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "end_date": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "status": {
+      "type": "boolean",
+      "nullable": false,
+      "maxLength": null,
+      "default": "true",
+      "pk": null,
+      "fk": null
+    },
+    "allocation_criteria_id": {
+      "type": "smallint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "campaigns",
+      "fk": "campaign_allocation_criteria"
+    },
+    "currency_iso": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "campaigns",
+      "fk": "currencies"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "campaigns",
+      "fk": "whitelabels"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "translations": {
+      "type": "json",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "deleted_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "version": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "'1'::smallint",
+      "pk": null,
+      "fk": null
+    },
+    "parent_campaign": {
+      "type": "bigint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "campaigns",
+      "fk": "campaigns"
+    },
+    "original_campaign": {
+      "type": "bigint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "campaigns",
+      "fk": "campaigns"
+    },
+    "bonus_type_id": {
+      "type": "smallint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "campaigns",
+      "fk": "bonus_types"
+    }
+  }
+}

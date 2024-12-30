@@ -1,0 +1,134 @@
+{
+  "name": "closures_users_totals",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.closures_users_totals_id_seq'::regclass)",
+      "pk": "closures_users_totals",
+      "fk": "closures_users_totals"
+    },
+    "user_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "closures_users_totals",
+      "fk": "users"
+    },
+    "username": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 15,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "played": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "won": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "profit": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "rtp": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "bets": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "game_id": {
+      "type": "integer",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "closures_users_totals",
+      "fk": "games"
+    },
+    "currency_iso": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "closures_users_totals",
+      "fk": "currencies"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "closures_users_totals",
+      "fk": "whitelabels"
+    },
+    "provider_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "closures_users_totals",
+      "fk": "providers"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "start_date": {
+      "type": "timestamp without time zone",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "end_date": {
+      "type": "timestamp without time zone",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

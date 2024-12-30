@@ -1,0 +1,266 @@
+{
+  "123pago_transactions": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "currency_iso": {},
+      "user_id": {},
+      "transaction_type_id": {},
+      "client_account_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "alps_urls": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "channel": {},
+      "amount": {},
+      "currency_iso": {},
+      "expiration": {},
+      "expiration_date": {},
+      "url": {},
+      "transaction_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "banks": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "country_iso": {},
+      "status": {},
+      "created_at": {},
+      "updated_at": {},
+      "currency_iso": {},
+      "data": {}
+    }
+  },
+  "client_accounts": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "oauth_client_id": {},
+      "payment_method_id": {},
+      "currency_iso": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {},
+      "status": {}
+    }
+  },
+  "client_payment_methods": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "oauth_client_id": {},
+      "payment_method_id": {},
+      "currency_iso": {},
+      "level_id": {},
+      "transaction_type_id": {},
+      "min": {},
+      "max": {},
+      "created_at": {},
+      "updated_at": {},
+      "status": {},
+      "order": {},
+      "limits": {}
+    }
+  },
+  "code_transactions": {
+    "description": "",
+    "columns": {
+      "code_id": {},
+      "transaction_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "countries": {
+    "description": "",
+    "columns": {
+      "iso": {},
+      "name": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "credit_codes": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "client_account_id": {},
+      "code": {},
+      "amount": {},
+      "used": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "currencies": {
+    "description": "",
+    "columns": {
+      "iso": {},
+      "name": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "levels": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "migrations": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "migration": {},
+      "batch": {}
+    }
+  },
+  "oauth_access_tokens": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "client_id": {},
+      "name": {},
+      "scopes": {},
+      "revoked": {},
+      "created_at": {},
+      "updated_at": {},
+      "expires_at": {}
+    }
+  },
+  "oauth_auth_codes": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "client_id": {},
+      "scopes": {},
+      "revoked": {},
+      "expires_at": {}
+    }
+  },
+  "oauth_clients": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "name": {},
+      "secret": {},
+      "endpoint": {},
+      "personal_access_client": {},
+      "password_client": {},
+      "revoked": {},
+      "created_at": {},
+      "updated_at": {},
+      "provider": {}
+    }
+  },
+  "oauth_personal_access_clients": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "client_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "oauth_refresh_tokens": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "access_token_id": {},
+      "revoked": {},
+      "expires_at": {}
+    }
+  },
+  "payment_methods": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "logo": {},
+      "account_required": {},
+      "show": {}
+    }
+  },
+  "transaction_details": {
+    "description": "",
+    "columns": {
+      "transaction_id": {},
+      "transaction_status_id": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "transaction_status": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "transaction_types": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "transactions": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "amount": {},
+      "currency_iso": {},
+      "user_account_id": {},
+      "client_account_id": {},
+      "transaction_type_id": {},
+      "transaction_status_id": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {},
+      "payment_method_id": {},
+      "reference": {}
+    }
+  },
+  "user_accounts": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "payment_method_id": {},
+      "data": {},
+      "currency_iso": {},
+      "created_at": {},
+      "updated_at": {},
+      "status": {}
+    }
+  },
+  "users": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "external_user": {},
+      "username": {},
+      "password": {},
+      "oauth_client_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "email": {}
+    }
+  }
+}

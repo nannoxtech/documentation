@@ -1,0 +1,70 @@
+{
+  "name": "notifications_groups",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.notifications_groups_id_seq'::regclass)",
+      "pk": "notifications_groups",
+      "fk": "notifications_groups"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "description": {
+      "type": "text",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "currency_iso": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "notifications_groups",
+      "fk": "whitelabels"
+    },
+    "operator_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "notifications_groups",
+      "fk": "users"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

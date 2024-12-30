@@ -1,0 +1,70 @@
+{
+  "name": "123pago_transactions",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('payments.\"123pago_transactions_id_seq\"'::regclass)",
+      "pk": "123pago_transactions",
+      "fk": "123pago_transactions"
+    },
+    "amount": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "currency_iso": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "123pago_transactions",
+      "fk": "currencies"
+    },
+    "user_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "123pago_transactions",
+      "fk": "users"
+    },
+    "transaction_type_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "123pago_transactions",
+      "fk": "transaction_types"
+    },
+    "client_account_id": {
+      "type": "bigint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "123pago_transactions",
+      "fk": "client_accounts"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

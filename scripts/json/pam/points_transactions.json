@@ -1,0 +1,94 @@
+{
+  "name": "points_transactions",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.points_transactions_id_seq'::regclass)",
+      "pk": "points_transactions",
+      "fk": "points_transactions"
+    },
+    "points_wallet_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "points_transactions",
+      "fk": "points_wallets"
+    },
+    "amount": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "balance": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "provider_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "transaction_type_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "points_transactions",
+      "fk": "transaction_types"
+    },
+    "currency_iso": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "points_transactions",
+      "fk": "currencies"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "points_transactions",
+      "fk": "whitelabels"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "provider_transaction": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

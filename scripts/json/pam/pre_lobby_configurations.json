@@ -1,0 +1,62 @@
+{
+  "name": "pre_lobby_configurations",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.pre_lobby_configurations_id_seq'::regclass)",
+      "pk": "pre_lobby_configurations",
+      "fk": "pre_lobby_configurations"
+    },
+    "template_element_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "pre_lobby_configurations",
+      "fk": "template_elements"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "pre_lobby_configurations",
+      "fk": "whitelabels"
+    },
+    "slug": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 100,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "data": {
+      "type": "json",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "exclude_role_permissions_user",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.exclude_role_permissions_user_id_seq'::regclass)",
+      "pk": "exclude_role_permissions_user",
+      "fk": "exclude_role_permissions_user"
+    },
+    "user_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "exclude_role_permissions_user",
+      "fk": "users"
+    },
+    "data": {
+      "type": "json",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "exclude": {
+      "type": "boolean",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

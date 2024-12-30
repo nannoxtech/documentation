@@ -1,0 +1,30 @@
+{
+  "name": "campaign_allocation_criteria",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.campaign_types_id_seq'::regclass)",
+      "pk": "campaign_allocation_criteria",
+      "fk": "campaign_allocation_criteria"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 100,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "show": {
+      "type": "boolean",
+      "nullable": true,
+      "maxLength": null,
+      "default": "false",
+      "pk": null,
+      "fk": null
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "name": "transactions",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('payments.transactions_id_seq'::regclass)",
+      "pk": "transactions",
+      "fk": "transactions"
+    },
+    "user_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "amount": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "currency_iso": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "user_account_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "client_account_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "transaction_type_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "transaction_status_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "data": {
+      "type": "json",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "payment_method_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "reference": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp with time zone",
+      "nullable": false,
+      "maxLength": null,
+      "default": "now()",
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp with time zone",
+      "nullable": false,
+      "maxLength": null,
+      "default": "now()",
+      "pk": null,
+      "fk": null
+    }
+  }
+}

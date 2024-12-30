@@ -1,0 +1,78 @@
+{
+  "name": "countries",
+  "description": "No description available",
+  "columns": {
+    "iso": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 2,
+      "default": null,
+      "pk": "countries",
+      "fk": "countries"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "calling_code": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 20,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "dni_regex": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "dni_format_examples": {
+      "type": "json",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "dni_name": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "alfa3": {
+      "type": "character",
+      "nullable": true,
+      "maxLength": 3,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

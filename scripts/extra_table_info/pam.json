@@ -1,0 +1,2460 @@
+{
+  "action_dotsuite_games": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "dotsuite_game_id": {},
+      "whitelabel_id": {},
+      "type": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "actions": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "action_type_id": {}
+    }
+  },
+  "actions_configurations": {
+    "description": "",
+    "columns": {
+      "action_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "data": {},
+      "provider_type_id": {},
+      "exclude_providers": {},
+      "status": {},
+      "id": {}
+    }
+  },
+  "actions_types": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "agent_currencies": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "agent_id": {},
+      "currency_iso": {},
+      "balance": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "agent_provider": {
+    "description": "",
+    "columns": {
+      "agent_id": {},
+      "currency_iso": {},
+      "provider_id": {},
+      "percentage": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "agent_user": {
+    "description": "",
+    "columns": {
+      "agent_id": {},
+      "user_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "agents": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "owner_id": {},
+      "master": {},
+      "created_at": {},
+      "updated_at": {},
+      "percentage": {}
+    }
+  },
+  "animals_deluxe_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "details": {},
+      "provider_transaction": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "approved_bonus_users": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "campaign_id": {},
+      "data": {},
+      "status": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "audit_types": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "audits": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "audit_type_id": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {},
+      "whitelabel_id": {}
+    }
+  },
+  "auto_lock_users": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "data": {},
+      "active": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "start_date": {},
+      "end_date": {},
+      "created_at": {},
+      "updated_at": {},
+      "deleted_at": {}
+    }
+  },
+  "belatra_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "provider_transaction": {},
+      "bet_type": {}
+    }
+  },
+  "bonus_types": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "booongo_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "round": {},
+      "provider_transaction": {},
+      "version": {},
+      "rollback": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "bti_reserves": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "reserve_id": {},
+      "reserved_amount": {},
+      "commited_amount": {},
+      "real_amount": {},
+      "bonus_amount": {},
+      "balance": {},
+      "wallet_transaction": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "status": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "caleta_gaming_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "rollback": {},
+      "type": {},
+      "created_at": {},
+      "updated_at": {},
+      "round": {},
+      "provider_transaction": {},
+      "bet_description": {},
+      "round_closed": {},
+      "free": {}
+    }
+  },
+  "campaign_allocation_criteria": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "show": {}
+    }
+  },
+  "campaign_allocation_criteria_met": {
+    "description": "",
+    "columns": {
+      "campaign_id": {},
+      "user_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "campaign_participation": {
+    "description": "",
+    "columns": {
+      "campaign_id": {},
+      "user_id": {},
+      "participation_status_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "campaign_participation_details": {
+    "description": "",
+    "columns": {
+      "campaign_id": {},
+      "user_id": {},
+      "participation_status_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "campaign_participation_status": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "campaign_total_bets": {
+    "description": "",
+    "columns": {
+      "campaign_id": {},
+      "user_id": {},
+      "amount": {},
+      "currency_iso": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "campaigns": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "data": {},
+      "device": {},
+      "start_date": {},
+      "end_date": {},
+      "status": {},
+      "allocation_criteria_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "translations": {},
+      "deleted_at": {},
+      "version": {},
+      "parent_campaign": {},
+      "original_campaign": {},
+      "bonus_type_id": {}
+    }
+  },
+  "center_horses_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "ticket": {},
+      "bet_type": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "closures_games_totals": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "game_id": {},
+      "game_name": {},
+      "mobile": {},
+      "played": {},
+      "won": {},
+      "profit": {},
+      "rtp": {},
+      "bets": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "provider_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "start_date": {},
+      "end_date": {}
+    }
+  },
+  "closures_registered_users": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "date": {},
+      "quantity": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "closures_users_totals": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "username": {},
+      "played": {},
+      "won": {},
+      "profit": {},
+      "rtp": {},
+      "bets": {},
+      "game_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "provider_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "start_date": {},
+      "end_date": {}
+    }
+  },
+  "color_spin_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "details": {},
+      "provider_transaction": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "components": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "conajzar_closures": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "played": {},
+      "won": {},
+      "profit": {},
+      "bets": {},
+      "games": {},
+      "users": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "start_date": {},
+      "end_date": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "configurations": {
+    "description": "",
+    "columns": {
+      "whitelabel_id": {},
+      "component_id": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "countries": {
+    "description": "",
+    "columns": {
+      "iso": {},
+      "name": {},
+      "created_at": {},
+      "updated_at": {},
+      "calling_code": {},
+      "dni_regex": {},
+      "dni_format_examples": {},
+      "dni_name": {},
+      "alfa3": {}
+    }
+  },
+  "credentials": {
+    "description": "",
+    "columns": {
+      "client_id": {},
+      "provider_id": {},
+      "currency_iso": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {},
+      "status": {},
+      "percentage": {},
+      "aggregator": {}
+    }
+  },
+  "currencies": {
+    "description": "",
+    "columns": {
+      "iso": {},
+      "name": {},
+      "created_at": {},
+      "updated_at": {},
+      "credit_limit": {},
+      "translations": {}
+    }
+  },
+  "custom_lobby_games": {
+    "description": "",
+    "columns": {
+      "game_id": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "dotsuite_game_id": {}
+    }
+  },
+  "dlv_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "provider_transaction": {},
+      "round_id": {},
+      "type": {}
+    }
+  },
+  "document_type_whitelabel": {
+    "description": "",
+    "columns": {
+      "document_type_id": {},
+      "whitelabel_id": {},
+      "status": {}
+    }
+  },
+  "document_types": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "documents": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "whitelabel_id": {},
+      "currency_iso": {},
+      "name": {},
+      "translations": {},
+      "status": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "dotsuite_free_spins": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "created_at": {},
+      "updated_at": {},
+      "users": {},
+      "games_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "provider_id": {},
+      "free_spins": {},
+      "data": {},
+      "status": {},
+      "campaign_name": {},
+      "user_id": {}
+    }
+  },
+  "dotsuite_games": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "slug": {},
+      "image": {},
+      "maker": {},
+      "provider_game_id": {},
+      "status": {},
+      "category": {},
+      "provider_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "types": {},
+      "game": {},
+      "order": {}
+    }
+  },
+  "dotsuite_games_section": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "section": {},
+      "additional_info": {},
+      "dotsuite_game_id": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "dotsuite_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "provider_id": {},
+      "provider": {},
+      "type": {},
+      "extra_data": {},
+      "dotsuite_game_id": {},
+      "round": {},
+      "created_at": {},
+      "updated_at": {},
+      "real_amount": {},
+      "bonus_amount": {},
+      "status": {},
+      "provider_transaction": {}
+    }
+  },
+  "email_templates": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "title": {},
+      "metadata": {},
+      "content": {},
+      "language": {},
+      "currency_iso": {},
+      "status": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "html": {},
+      "subject": {}
+    }
+  },
+  "email_type_whitelabel": {
+    "description": "",
+    "columns": {
+      "email_type_id": {},
+      "whitelabel_id": {},
+      "title": {},
+      "subtitle": {},
+      "content": {},
+      "button": {},
+      "footer": {},
+      "created_at": {},
+      "updated_at": {},
+      "data": {},
+      "language": {}
+    }
+  },
+  "email_types": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "eventbet_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "provider_transaction": {},
+      "rollback": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "exclude_games": {
+    "description": "",
+    "columns": {
+      "game_id": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "exclude_providers_users": {
+    "description": "",
+    "columns": {
+      "currency_iso": {},
+      "provider_id": {},
+      "user_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "exclude_role_permissions_user": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "data": {},
+      "exclude": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "ezugi_rollbacks": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "transaction": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "ezugi_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "provider_transaction": {},
+      "token": {},
+      "bet_type": {},
+      "table_id": {},
+      "seat_id": {},
+      "round_id": {},
+      "platform_id": {},
+      "debit_transaction_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "failed_jobs": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "connection": {},
+      "queue": {},
+      "payload": {},
+      "exception": {},
+      "failed_at": {}
+    }
+  },
+  "favorite_dotsuite_games": {
+    "description": "",
+    "columns": {
+      "dotsuite_game_id": {},
+      "user_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "favorite_games": {
+    "description": "",
+    "columns": {
+      "game_id": {},
+      "user_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "featured_dotsuite_games": {
+    "description": "",
+    "columns": {
+      "dotsuite_game_id": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "featured_games": {
+    "description": "",
+    "columns": {
+      "game_id": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "franchise_user": {
+    "description": "",
+    "columns": {
+      "franchise_id": {},
+      "user_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "franchises": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "status": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "free_spins_bonus": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "whitelabel_id": {},
+      "code_reference": {},
+      "currency_iso": {},
+      "exp_date": {},
+      "status": {},
+      "provider_id": {},
+      "game_id": {},
+      "code": {},
+      "extra_data": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "game_section": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "section": {},
+      "additional_info": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "dotsuite_game_id": {},
+      "element_type_id": {}
+    }
+  },
+  "games": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "slug": {},
+      "image": {},
+      "maker": {},
+      "provider_game_id": {},
+      "type": {},
+      "status": {},
+      "mobile": {},
+      "fun": {},
+      "new": {},
+      "category": {},
+      "created_at": {},
+      "updated_at": {},
+      "provider_id": {},
+      "provider_additional_id": {},
+      "order": {}
+    }
+  },
+  "gamzix_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "provider_transaction_id": {},
+      "round_id": {},
+      "rollback": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "golden_race_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "transaction_id": {},
+      "request_id": {},
+      "token": {},
+      "bet_type": {},
+      "game_cycle": {},
+      "game_cycle_closed": {}
+    }
+  },
+  "hidden_dotsuite_games": {
+    "description": "",
+    "columns": {
+      "dotsuite_game_id": {},
+      "user_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "hidden": {}
+    }
+  },
+  "hidden_games": {
+    "description": "",
+    "columns": {
+      "game_id": {},
+      "user_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "hidden": {}
+    }
+  },
+  "include_games": {
+    "description": "",
+    "columns": {
+      "game_id": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "inmejorable_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "reference": {},
+      "created_at": {},
+      "updated_at": {},
+      "bet_type": {},
+      "extra_data": {},
+      "status": {}
+    }
+  },
+  "iq_soft_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "type_id": {},
+      "provider_transaction": {},
+      "rollback": {},
+      "created_at": {},
+      "updated_at": {},
+      "info": {},
+      "status": {},
+      "data": {}
+    }
+  },
+  "ka_gaming_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "game_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "provider_transaction": {},
+      "round": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "landing_pages": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "currency_iso": {},
+      "language": {},
+      "whitelabel_id": {},
+      "data": {},
+      "status": {},
+      "start_date": {},
+      "end_date": {},
+      "created_at": {},
+      "updated_at": {},
+      "name": {}
+    }
+  },
+  "last_winners": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "dotsuite_game_id": {},
+      "amount": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "data": {},
+      "provider_id": {},
+      "provider_game_id": {},
+      "start_date": {},
+      "end_date": {},
+      "created_at": {},
+      "updated_at": {},
+      "game_id": {}
+    }
+  },
+  "lega_jackpot_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "provider_session": {},
+      "game_id": {},
+      "game_mode": {},
+      "provider_transaction_id": {},
+      "play_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "lobby_dotsuite_whitelabels": {
+    "description": "",
+    "columns": {
+      "dotsuite_game_id": {},
+      "whitelabel_id": {},
+      "data": {},
+      "order": {},
+      "route": {},
+      "created_at": {},
+      "updated_at": {},
+      "image": {},
+      "name": {}
+    }
+  },
+  "lobby_games_whitelabels": {
+    "description": "",
+    "columns": {
+      "game_id": {},
+      "whitelabel_id": {},
+      "data": {},
+      "order": {},
+      "route": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "lobby_providers_whitelabels": {
+    "description": "",
+    "columns": {
+      "whitelabel_id": {},
+      "provider_id": {},
+      "data": {},
+      "order": {},
+      "route": {},
+      "status": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "lucky_spins_sessions": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "token": {},
+      "sign": {},
+      "game_id": {},
+      "user_id": {},
+      "currency_iso": {},
+      "lang": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "wallet_id": {}
+    }
+  },
+  "lucky_spins_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "round_id": {},
+      "bet_id": {},
+      "win_id": {},
+      "token": {},
+      "bet_transaction_id": {},
+      "type": {}
+    }
+  },
+  "mancala_gaming_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "round": {},
+      "provider_transaction": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "manual_exchanges": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "currency_iso": {},
+      "amount": {},
+      "created_at": {},
+      "updated_at": {},
+      "api_amount": {},
+      "whitelabel_id": {}
+    }
+  },
+  "marketing_campaigns": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "title": {},
+      "status": {},
+      "language": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "segment_id": {},
+      "email_template_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "scheduled_date": {}
+    }
+  },
+  "mascot_gaming_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "provider_transaction": {},
+      "session": {},
+      "event": {},
+      "round": {},
+      "bet_type": {},
+      "win_type": {},
+      "rollback": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "migrations": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "migration": {},
+      "batch": {}
+    }
+  },
+  "mohio_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "ticket": {},
+      "bet_type": {}
+    }
+  },
+  "mohio_token_users": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "token": {},
+      "type": {},
+      "status": {},
+      "created_at": {},
+      "updated_at": {},
+      "wallet_id": {}
+    }
+  },
+  "notification_segment_user": {
+    "description": "",
+    "columns": {
+      "notification_id": {},
+      "segment_id": {}
+    }
+  },
+  "notification_user": {
+    "description": "",
+    "columns": {
+      "notification_id": {},
+      "user_id": {}
+    }
+  },
+  "notifications": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "title": {},
+      "content": {},
+      "image": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "status": {},
+      "notification_type_id": {},
+      "language": {},
+      "deleted_at": {},
+      "created_at": {},
+      "updated_at": {},
+      "operator_id": {}
+    }
+  },
+  "notifications_groups": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "description": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "operator_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "notifications_groups_user": {
+    "description": "",
+    "columns": {
+      "notification_group_id": {},
+      "user_id": {}
+    }
+  },
+  "notifications_read": {
+    "description": "",
+    "columns": {
+      "notification_id": {},
+      "user_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "notifications_types": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "ocb_slots_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "provider_transaction": {},
+      "session": {},
+      "event": {},
+      "round": {},
+      "bet_type": {},
+      "win_type": {},
+      "created_at": {},
+      "updated_at": {},
+      "rollback": {}
+    }
+  },
+  "operational_balance": {
+    "description": "",
+    "columns": {
+      "whitelabel_id": {},
+      "currency_iso": {},
+      "balance": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "operational_balance_transactions": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "user_id": {},
+      "operator": {},
+      "provider_id": {},
+      "whitelabel_id": {},
+      "currency_iso": {},
+      "transaction_type_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "page_sections": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "page_whitelabel": {
+    "description": "",
+    "columns": {
+      "page_id": {},
+      "whitelabel_id": {},
+      "language": {},
+      "title": {},
+      "content": {},
+      "status": {},
+      "created_at": {},
+      "updated_at": {},
+      "order": {}
+    }
+  },
+  "pages": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "slug": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "password_resets": {
+    "description": "",
+    "columns": {
+      "token": {},
+      "user_id": {},
+      "whitelabel_id": {},
+      "created_at": {}
+    }
+  },
+  "payments_notification": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "amount": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "permission_role": {
+    "description": "",
+    "columns": {
+      "permission_id": {},
+      "role_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "permission_user": {
+    "description": "",
+    "columns": {
+      "permission_id": {},
+      "user_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "permissions": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "description": {},
+      "depends": {}
+    }
+  },
+  "permissions_dot": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "description": {},
+      "guard_name": {},
+      "created_at": {},
+      "updated_at": {},
+      "name": {}
+    }
+  },
+  "playson_balances": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "provider_id": {},
+      "session": {},
+      "balance": {},
+      "currency_iso": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "playson_currency_games": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "currency": {},
+      "user_id": {},
+      "provider_game_id": {},
+      "key": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "playson_guid": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "guid": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "playson_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "game_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "provider_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "provider_transaction": {}
+    }
+  },
+  "points_transactions": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "points_wallet_id": {},
+      "amount": {},
+      "balance": {},
+      "provider_id": {},
+      "transaction_type_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "provider_transaction": {}
+    }
+  },
+  "points_wallets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "currency_iso": {},
+      "balance": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "post_categories": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "translations": {},
+      "created_at": {},
+      "updated_at": {},
+      "sub_category": {}
+    }
+  },
+  "post_sub_categories": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "translations": {}
+    }
+  },
+  "posts": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "title": {},
+      "slug": {},
+      "content": {},
+      "image": {},
+      "start_date": {},
+      "end_date": {},
+      "language": {},
+      "currency_iso": {},
+      "status": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "main_image": {},
+      "post_categories_id": {},
+      "sub_categories_id": {}
+    }
+  },
+  "pragmatic_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "provider_transaction": {},
+      "round": {},
+      "rollback": {},
+      "created_at": {},
+      "updated_at": {},
+      "provider_id": {}
+    }
+  },
+  "pre_lobby_configurations": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "template_element_id": {},
+      "whitelabel_id": {},
+      "slug": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "profiles": {
+    "description": "",
+    "columns": {
+      "user_id": {},
+      "first_name": {},
+      "last_name": {},
+      "dni": {},
+      "gender": {},
+      "address": {},
+      "phone": {},
+      "birth_date": {},
+      "country_iso": {},
+      "state": {},
+      "city": {},
+      "timezone": {},
+      "avatar": {},
+      "level": {},
+      "created_at": {},
+      "updated_at": {},
+      "calling_code": {},
+      "data": {},
+      "language": {},
+      "payments_country": {},
+      "phone_token": {}
+    }
+  },
+  "promotion_images_section": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "title": {},
+      "description": {},
+      "button": {},
+      "image": {},
+      "url": {},
+      "language": {},
+      "currency_iso": {},
+      "order": {},
+      "status": {},
+      "section_images_id": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "element_type_id": {},
+      "section": {},
+      "start_date": {},
+      "end_date": {}
+    }
+  },
+  "provider_limit_whitelabel": {
+    "description": "",
+    "columns": {
+      "provider_id": {},
+      "whitelabel_id": {},
+      "currency_iso": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "provider_notifications": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "amount": {},
+      "whitelabel_id": {},
+      "currency_iso": {},
+      "provider_id": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "provider_sessions": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "wallet_id": {},
+      "provider_id": {},
+      "token": {},
+      "timestamp": {},
+      "expired": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "provider_types": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "providers": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "provider_type_id": {},
+      "status": {},
+      "tickets_table": {},
+      "games_table": {},
+      "image": {},
+      "route": {},
+      "logo": {},
+      "dotsuite_provider_id": {},
+      "betpay_id": {},
+      "images_path": {},
+      "square_size": {},
+      "rectangular_size": {},
+      "bg_image": {},
+      "provider_image": {},
+      "status_lobby": {}
+    }
+  },
+  "push_notifications": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "payment_method_id": {},
+      "amount": {},
+      "read": {},
+      "whitelabel_id": {},
+      "currency_iso": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "red_rake_original_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "provider_transaction": {},
+      "type": {},
+      "round": {},
+      "round_finished": {},
+      "history": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "referrals": {
+    "description": "",
+    "columns": {
+      "user_id": {},
+      "referral_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "rewards_categories": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "role_has_permissions": {
+    "description": "",
+    "columns": {
+      "permission_id": {},
+      "role_id": {}
+    }
+  },
+  "role_user": {
+    "description": "",
+    "columns": {
+      "role_id": {},
+      "user_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "roles": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "description": {}
+    }
+  },
+  "roles_dot": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "description": {},
+      "guard_name": {},
+      "created_at": {},
+      "updated_at": {},
+      "name": {}
+    }
+  },
+  "rollover_types": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "multiplier": {},
+      "created_at": {},
+      "updated_at": {},
+      "campaign_id": {},
+      "exclude_providers": {},
+      "provider_type_id": {},
+      "days": {},
+      "include_deposit": {}
+    }
+  },
+  "rollovers": {
+    "description": "",
+    "columns": {
+      "campaign_id": {},
+      "rollover_type_id": {},
+      "user_id": {},
+      "total": {},
+      "deposit": {},
+      "status": {},
+      "created_at": {},
+      "updated_at": {},
+      "target": {},
+      "expiration_date": {},
+      "bonus": {},
+      "final_amount": {},
+      "converted": {}
+    }
+  },
+  "salsa_gaming_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "provider_transaction": {},
+      "reference": {},
+      "refund": {},
+      "provider_id": {}
+    }
+  },
+  "sbl_live_games_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "details": {},
+      "provider_transaction": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "section_images": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "title": {},
+      "description": {},
+      "button": {},
+      "image": {},
+      "url": {},
+      "language": {},
+      "currency_iso": {},
+      "status": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "position": {},
+      "mobile": {},
+      "element_type_id": {},
+      "section": {},
+      "start_date": {},
+      "end_date": {},
+      "video": {},
+      "background": {},
+      "provider": {},
+      "order": {}
+    }
+  },
+  "section_modals": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "image": {},
+      "route": {},
+      "status": {},
+      "one_time": {},
+      "scroll": {},
+      "language": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "url": {}
+    }
+  },
+  "segments": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "description": {},
+      "data": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "filter": {},
+      "status": {}
+    }
+  },
+  "sessions": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "ip_address": {},
+      "user_agent": {},
+      "payload": {},
+      "last_activity": {}
+    }
+  },
+  "sisvenprol_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "user_id": {},
+      "game_id": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "draw_id": {},
+      "draw_date": {},
+      "ticket": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "sisvenprol_tokens": {
+    "description": "",
+    "columns": {
+      "access_token": {},
+      "user_id": {},
+      "game_id": {}
+    }
+  },
+  "sliders": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "image": {},
+      "url": {},
+      "start_date": {},
+      "end_date": {},
+      "language": {},
+      "currency_iso": {},
+      "order": {},
+      "status": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "mobile": {},
+      "element_type_id": {},
+      "section": {},
+      "route": {},
+      "video": {},
+      "data": {}
+    }
+  },
+  "spin_deluxe_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "details": {},
+      "provider_transaction": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "sportbook_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "bet_id": {},
+      "ticket": {},
+      "bet_type": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "store_exchanges": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "reward_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "points": {},
+      "data": {}
+    }
+  },
+  "store_rewards": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "description": {},
+      "points": {},
+      "image": {},
+      "data": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "quantity": {},
+      "start_date": {},
+      "end_date": {},
+      "status": {},
+      "created_at": {},
+      "updated_at": {},
+      "language": {},
+      "deleted_at": {},
+      "category_id": {},
+      "slug": {},
+      "amount": {},
+      "type": {}
+    }
+  },
+  "store_transactions": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "points_wallet_id": {},
+      "amount": {},
+      "balance": {},
+      "provider_id": {},
+      "transaction_type_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "user_id": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {},
+      "provider_transaction": {}
+    }
+  },
+  "template_elements": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "data": {},
+      "element_type_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "template_elements_types": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "real_amount": {},
+      "bonus_amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "provider_transaction": {},
+      "provider_round": {},
+      "provider_id": {},
+      "aggregator_id": {},
+      "status": {},
+      "extra_data": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "tournament_ranking": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "whitelabel_id": {},
+      "campaign_id": {},
+      "currency_iso": {},
+      "provider_id": {},
+      "total": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "transaction_details": {
+    "description": "",
+    "columns": {
+      "transaction_id": {},
+      "transaction_status_id": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "transaction_status": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "transaction_types": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "transactions": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "amount": {},
+      "currency_iso": {},
+      "transaction_type_id": {},
+      "transaction_status_id": {},
+      "provider_id": {},
+      "data": {},
+      "created_at": {},
+      "updated_at": {},
+      "whitelabel_id": {},
+      "payment_method_id": {},
+      "provider_transaction": {}
+    }
+  },
+  "triple_cherry_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "provider_transaction": {},
+      "bet_type": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "triple_cherry_tokens": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "wallet_id": {},
+      "token": {},
+      "expires_at": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "tvbet_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "bet_id": {},
+      "type": {}
+    }
+  },
+  "tvbet_tokens": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "auth_token": {},
+      "refresh_token": {},
+      "last_activity": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "user_currencies": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "user_id": {},
+      "currency_iso": {},
+      "wallet_id": {},
+      "default": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "user_documents": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "status": {},
+      "user_id": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "document_id": {}
+    }
+  },
+  "user_has_permissions": {
+    "description": "",
+    "columns": {
+      "permission_id": {},
+      "model_type": {},
+      "model_id": {}
+    }
+  },
+  "user_has_roles": {
+    "description": "",
+    "columns": {
+      "role_id": {},
+      "model_type": {},
+      "model_id": {}
+    }
+  },
+  "users": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "username": {},
+      "email": {},
+      "password": {},
+      "uuid": {},
+      "status": {},
+      "ip": {},
+      "whitelabel_id": {},
+      "wallet_access_token": {},
+      "remember_token": {},
+      "created_at": {},
+      "updated_at": {},
+      "tester": {},
+      "web_register": {},
+      "referral_code": {},
+      "promo_code": {},
+      "last_deposit_amount": {},
+      "last_debit_amount": {},
+      "last_deposit_currency": {},
+      "last_debit_currency": {},
+      "last_login": {},
+      "last_deposit": {},
+      "last_debit": {},
+      "main": {},
+      "btag": {},
+      "first_deposit": {},
+      "first_deposit_amount": {},
+      "first_deposit_currency": {},
+      "first_debit_amount": {},
+      "first_debit_currency": {},
+      "first_debit": {},
+      "register_currency": {},
+      "login_attempts": {},
+      "bonus": {}
+    }
+  },
+  "users_temp": {
+    "description": "",
+    "columns": {
+      "username": {},
+      "email": {},
+      "password": {},
+      "token": {},
+      "ip": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "referral_id": {},
+      "calling_code": {},
+      "phone": {},
+      "promo_code": {},
+      "birth_date": {},
+      "data": {},
+      "btag": {},
+      "language": {},
+      "first_name": {},
+      "last_name": {},
+      "dni": {},
+      "gender": {},
+      "country_iso": {},
+      "city": {}
+    }
+  },
+  "virtual_generation_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "transaction_id": {},
+      "coupon_code": {},
+      "token": {},
+      "bet_type": {}
+    }
+  },
+  "vivo_gaming_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "provider_transaction": {},
+      "type": {},
+      "round": {},
+      "round_finished": {},
+      "history": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "vls_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "details": {},
+      "provider_transaction": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "wazdan_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "round": {},
+      "provider_transaction": {},
+      "rollback": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "whitelabel_dotsuite_games": {
+    "description": "",
+    "columns": {
+      "whitelabel_id": {},
+      "dotsuite_game_id": {},
+      "whitelabel_game_category_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "whitelabel_games": {
+    "description": "",
+    "columns": {
+      "whitelabel_id": {},
+      "game_id": {},
+      "whitelabel_game_category_id": {},
+      "created_at": {},
+      "updated_at": {}
+    }
+  },
+  "whitelabel_games_categories": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "translations": {}
+    }
+  },
+  "whitelabels": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {},
+      "description": {},
+      "domain": {},
+      "status": {},
+      "created_at": {},
+      "updated_at": {},
+      "social_reason": {},
+      "url": {},
+      "franchise_id": {}
+    }
+  },
+  "whitelabels_status": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "name": {}
+    }
+  },
+  "wnet_games_tickets": {
+    "description": "",
+    "columns": {
+      "id": {},
+      "amount": {},
+      "transaction_type_id": {},
+      "wallet_transaction": {},
+      "balance": {},
+      "user_id": {},
+      "currency_iso": {},
+      "whitelabel_id": {},
+      "game_id": {},
+      "created_at": {},
+      "updated_at": {},
+      "bet_id": {},
+      "session_id": {},
+      "transaction_id": {},
+      "bet_type": {}
+    }
+  }
+}

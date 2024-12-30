@@ -1,0 +1,102 @@
+{
+  "name": "email_templates",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.email_templates_id_seq'::regclass)",
+      "pk": "email_templates",
+      "fk": "email_templates"
+    },
+    "title": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "metadata": {
+      "type": "json",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "content": {
+      "type": "json",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "language": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 5,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "currency_iso": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "status": {
+      "type": "boolean",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "email_templates",
+      "fk": "whitelabels"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "html": {
+      "type": "text",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "subject": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

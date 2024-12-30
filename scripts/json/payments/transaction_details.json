@@ -1,0 +1,46 @@
+{
+  "name": "transaction_details",
+  "description": "No description available",
+  "columns": {
+    "transaction_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "transaction_details",
+      "fk": "transactions"
+    },
+    "transaction_status_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "transaction_details",
+      "fk": "transaction_status"
+    },
+    "data": {
+      "type": "json",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

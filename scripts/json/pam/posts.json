@@ -1,0 +1,134 @@
+{
+  "name": "posts",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.posts_id_seq'::regclass)",
+      "pk": "posts",
+      "fk": "posts"
+    },
+    "title": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "slug": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "content": {
+      "type": "text",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "image": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "start_date": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "end_date": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "language": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 5,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "currency_iso": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "status": {
+      "type": "boolean",
+      "nullable": false,
+      "maxLength": null,
+      "default": "true",
+      "pk": null,
+      "fk": null
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "posts",
+      "fk": "whitelabels"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "main_image": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "post_categories_id": {
+      "type": "smallint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "posts",
+      "fk": "post_categories"
+    },
+    "sub_categories_id": {
+      "type": "integer",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "posts",
+      "fk": "post_sub_categories"
+    }
+  }
+}

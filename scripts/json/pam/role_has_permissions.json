@@ -1,0 +1,22 @@
+{
+  "name": "role_has_permissions",
+  "description": "No description available",
+  "columns": {
+    "permission_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "role_has_permissions",
+      "fk": "role_has_permissions"
+    },
+    "role_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "role_has_permissions",
+      "fk": "roles_dot"
+    }
+  }
+}

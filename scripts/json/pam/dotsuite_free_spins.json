@@ -1,0 +1,110 @@
+{
+  "name": "dotsuite_free_spins",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.dotsuite_free_spins_id_seq'::regclass)",
+      "pk": "dotsuite_free_spins",
+      "fk": "dotsuite_free_spins"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "users": {
+      "type": "json",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "games_id": {
+      "type": "json",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "currency_iso": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "dotsuite_free_spins",
+      "fk": "currencies"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "dotsuite_free_spins",
+      "fk": "whitelabels"
+    },
+    "provider_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "dotsuite_free_spins",
+      "fk": "providers"
+    },
+    "free_spins": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "data": {
+      "type": "json",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "status": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "campaign_name": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "user_id": {
+      "type": "integer",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "dotsuite_free_spins",
+      "fk": "users"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "favorite_dotsuite_games",
+  "description": "No description available",
+  "columns": {
+    "dotsuite_game_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "favorite_dotsuite_games",
+      "fk": "favorite_dotsuite_games"
+    },
+    "user_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "favorite_dotsuite_games",
+      "fk": "users"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

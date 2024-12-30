@@ -1,0 +1,110 @@
+{
+  "name": "transactions",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.transactions_id_seq'::regclass)",
+      "pk": "transactions",
+      "fk": "transactions"
+    },
+    "user_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "transactions",
+      "fk": "users"
+    },
+    "amount": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "currency_iso": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "transactions",
+      "fk": "currencies"
+    },
+    "transaction_type_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "transactions",
+      "fk": "transaction_types"
+    },
+    "transaction_status_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "transactions",
+      "fk": "transaction_status"
+    },
+    "provider_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "transactions",
+      "fk": "providers"
+    },
+    "data": {
+      "type": "json",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "transactions",
+      "fk": "whitelabels"
+    },
+    "payment_method_id": {
+      "type": "integer",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "provider_transaction": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

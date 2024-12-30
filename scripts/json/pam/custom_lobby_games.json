@@ -1,0 +1,46 @@
+{
+  "name": "custom_lobby_games",
+  "description": "No description available",
+  "columns": {
+    "game_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "custom_lobby_games",
+      "fk": "custom_lobby_games"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "custom_lobby_games",
+      "fk": "whitelabels"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "dotsuite_game_id": {
+      "type": "bigint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "custom_lobby_games",
+      "fk": "dotsuite_games"
+    }
+  }
+}

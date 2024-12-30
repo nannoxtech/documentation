@@ -1,0 +1,70 @@
+{
+  "name": "user_accounts",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('payments.user_accounts_id_seq'::regclass)",
+      "pk": "user_accounts",
+      "fk": "user_accounts"
+    },
+    "user_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "user_accounts",
+      "fk": "users"
+    },
+    "payment_method_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "user_accounts",
+      "fk": "payment_methods"
+    },
+    "data": {
+      "type": "json",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "currency_iso": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "user_accounts",
+      "fk": "currencies"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "status": {
+      "type": "boolean",
+      "nullable": false,
+      "maxLength": null,
+      "default": "true",
+      "pk": null,
+      "fk": null
+    }
+  }
+}

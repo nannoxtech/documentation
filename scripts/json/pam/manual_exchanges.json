@@ -1,0 +1,62 @@
+{
+  "name": "manual_exchanges",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.manual_exchanges_id_seq'::regclass)",
+      "pk": "manual_exchanges",
+      "fk": "manual_exchanges"
+    },
+    "currency_iso": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "manual_exchanges",
+      "fk": "currencies"
+    },
+    "amount": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "api_amount": {
+      "type": "double precision",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "manual_exchanges",
+      "fk": "whitelabels"
+    }
+  }
+}

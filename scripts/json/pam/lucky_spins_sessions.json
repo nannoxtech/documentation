@@ -1,0 +1,94 @@
+{
+  "name": "lucky_spins_sessions",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.lucky_spins_sessions_id_seq'::regclass)",
+      "pk": "lucky_spins_sessions",
+      "fk": "lucky_spins_sessions"
+    },
+    "token": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 32,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "sign": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 64,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "game_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "user_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "lucky_spins_sessions",
+      "fk": "users"
+    },
+    "currency_iso": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "lucky_spins_sessions",
+      "fk": "currencies"
+    },
+    "lang": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 5,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "lucky_spins_sessions",
+      "fk": "whitelabels"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "wallet_id": {
+      "type": "bigint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

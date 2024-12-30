@@ -1,0 +1,86 @@
+{
+  "name": "operational_balance_transactions",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.operational_balance_transactions_id_seq'::regclass)",
+      "pk": "operational_balance_transactions",
+      "fk": "operational_balance_transactions"
+    },
+    "amount": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "user_id": {
+      "type": "bigint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "operational_balance_transactions",
+      "fk": "users"
+    },
+    "operator": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 25,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "provider_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "operational_balance_transactions",
+      "fk": "providers"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "operational_balance_transactions",
+      "fk": "whitelabels"
+    },
+    "currency_iso": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "operational_balance_transactions",
+      "fk": "currencies"
+    },
+    "transaction_type_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "operational_balance_transactions",
+      "fk": "transaction_types"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

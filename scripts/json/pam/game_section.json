@@ -1,0 +1,78 @@
+{
+  "name": "game_section",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.game_section_id_seq'::regclass)",
+      "pk": "game_section",
+      "fk": "game_section"
+    },
+    "section": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 50,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "additional_info": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 50,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "game_section",
+      "fk": "whitelabels"
+    },
+    "game_id": {
+      "type": "integer",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "game_section",
+      "fk": "games"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "dotsuite_game_id": {
+      "type": "integer",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "game_section",
+      "fk": "dotsuite_games"
+    },
+    "element_type_id": {
+      "type": "smallint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

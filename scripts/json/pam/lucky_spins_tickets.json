@@ -1,0 +1,142 @@
+{
+  "name": "lucky_spins_tickets",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.lucky_spins_tickets_id_seq'::regclass)",
+      "pk": "lucky_spins_tickets",
+      "fk": "lucky_spins_tickets"
+    },
+    "amount": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "transaction_type_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "lucky_spins_tickets",
+      "fk": "transaction_types"
+    },
+    "wallet_transaction": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "balance": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "user_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "lucky_spins_tickets",
+      "fk": "users"
+    },
+    "currency_iso": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "lucky_spins_tickets",
+      "fk": "currencies"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "lucky_spins_tickets",
+      "fk": "whitelabels"
+    },
+    "game_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "lucky_spins_tickets",
+      "fk": "games"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "round_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "bet_id": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 32,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "win_id": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 32,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "token": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 32,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "bet_transaction_id": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "type": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 10,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

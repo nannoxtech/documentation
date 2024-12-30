@@ -1,0 +1,22 @@
+{
+  "name": "transaction_status",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('payments.transaction_status_id_seq'::regclass)",
+      "pk": "transaction_status",
+      "fk": "transaction_status"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 20,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

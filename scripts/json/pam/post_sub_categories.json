@@ -1,0 +1,30 @@
+{
+  "name": "post_sub_categories",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.post_sub_categories_id_seq'::regclass)",
+      "pk": "post_sub_categories",
+      "fk": "post_sub_categories"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "translations": {
+      "type": "json",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

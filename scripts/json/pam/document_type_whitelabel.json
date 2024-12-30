@@ -1,0 +1,30 @@
+{
+  "name": "document_type_whitelabel",
+  "description": "No description available",
+  "columns": {
+    "document_type_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "document_type_whitelabel",
+      "fk": "document_type_whitelabel"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "document_type_whitelabel",
+      "fk": "whitelabels"
+    },
+    "status": {
+      "type": "boolean",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "template_elements_types",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.template_elements_types_id_seq'::regclass)",
+      "pk": "template_elements_types",
+      "fk": "template_elements_types"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 25,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

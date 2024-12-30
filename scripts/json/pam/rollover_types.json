@@ -1,0 +1,78 @@
+{
+  "name": "rollover_types",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.rollover_types_id_seq'::regclass)",
+      "pk": "rollover_types",
+      "fk": "rollover_types"
+    },
+    "multiplier": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "campaign_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "rollover_types",
+      "fk": "campaigns"
+    },
+    "exclude_providers": {
+      "type": "json",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "provider_type_id": {
+      "type": "smallint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": "rollover_types",
+      "fk": "provider_types"
+    },
+    "days": {
+      "type": "smallint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "include_deposit": {
+      "type": "boolean",
+      "nullable": true,
+      "maxLength": null,
+      "default": "false",
+      "pk": null,
+      "fk": null
+    }
+  }
+}

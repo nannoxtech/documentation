@@ -1,9 +1,10 @@
+const { join } = require('path');
 
-export const MARKDOWN_DIR = "markdown_tables";
+const MARKDOWN_DIR = join(__dirname, "../docs/data-model");
 
-export const JSON_DIR = "json_tables";
+const JSON_DIR = join(__dirname, "json");
 
-export const DATABASE_CONFIG = [
+const DATABASES_CONFIG = [
   {
     mdDirName: "wallet",
     jsonDirName: "wallet",
@@ -12,7 +13,8 @@ export const DATABASE_CONFIG = [
     schema: "wallet",
     port: 5432,
     user: 'postgres',
-    password: 'postgres',
+    password: 'postgress',
+    extraInfoFileName: "wallet.json"
   },
   {
     mdDirName: "pam",
@@ -22,7 +24,8 @@ export const DATABASE_CONFIG = [
     schema: "pam",
     port: 5432,
     user: 'postgres',
-    password: 'postgres',
+    password: 'postgress',
+    extraInfoFileName: "pam.json"
   },
   {
     mdDirName: "payments",
@@ -32,6 +35,13 @@ export const DATABASE_CONFIG = [
     schema: "payments",
     port: 5432,
     user: 'postgres',
-    password: 'postgres',
+    password: 'postgress',
+    extraInfoFileName: "payments.json"
   },
-]
+];
+
+module.exports = {
+  DATABASES_CONFIG,
+  JSON_DIR,
+  MARKDOWN_DIR
+};

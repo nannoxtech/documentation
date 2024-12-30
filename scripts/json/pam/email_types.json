@@ -1,0 +1,22 @@
+{
+  "name": "email_types",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.email_types_id_seq'::regclass)",
+      "pk": "email_types",
+      "fk": "email_types"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 50,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

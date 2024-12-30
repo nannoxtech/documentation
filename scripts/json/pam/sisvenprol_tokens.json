@@ -1,0 +1,30 @@
+{
+  "name": "sisvenprol_tokens",
+  "description": "No description available",
+  "columns": {
+    "access_token": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "sisvenprol_tokens",
+      "fk": "sisvenprol_tokens"
+    },
+    "user_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "game_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

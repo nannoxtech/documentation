@@ -1,0 +1,30 @@
+{
+  "name": "user_has_permissions",
+  "description": "No description available",
+  "columns": {
+    "permission_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "user_has_permissions",
+      "fk": "user_has_permissions"
+    },
+    "model_type": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": "user_has_permissions",
+      "fk": "user_has_permissions"
+    },
+    "model_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "user_has_permissions",
+      "fk": "user_has_permissions"
+    }
+  }
+}

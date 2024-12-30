@@ -1,0 +1,54 @@
+{
+  "name": "failed_jobs",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.failed_jobs_id_seq'::regclass)",
+      "pk": "failed_jobs",
+      "fk": "failed_jobs"
+    },
+    "connection": {
+      "type": "text",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "queue": {
+      "type": "text",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "payload": {
+      "type": "text",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "exception": {
+      "type": "text",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "failed_at": {
+      "type": "timestamp without time zone",
+      "nullable": false,
+      "maxLength": null,
+      "default": "CURRENT_TIMESTAMP",
+      "pk": null,
+      "fk": null
+    }
+  }
+}

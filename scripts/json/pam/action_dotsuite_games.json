@@ -1,0 +1,54 @@
+{
+  "name": "action_dotsuite_games",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.action_dotsuite_games_id_seq'::regclass)",
+      "pk": "action_dotsuite_games",
+      "fk": "action_dotsuite_games"
+    },
+    "dotsuite_game_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "action_dotsuite_games",
+      "fk": "dotsuite_games"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "action_dotsuite_games",
+      "fk": "whitelabels"
+    },
+    "type": {
+      "type": "smallint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

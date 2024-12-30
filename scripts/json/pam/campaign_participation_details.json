@@ -1,0 +1,46 @@
+{
+  "name": "campaign_participation_details",
+  "description": "No description available",
+  "columns": {
+    "campaign_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "campaign_participation_details",
+      "fk": "campaign_participation_details"
+    },
+    "user_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "campaign_participation_details",
+      "fk": "users"
+    },
+    "participation_status_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "campaign_participation_details",
+      "fk": "campaign_participation_details"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

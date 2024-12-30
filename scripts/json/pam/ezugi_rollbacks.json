@@ -1,0 +1,38 @@
+{
+  "name": "ezugi_rollbacks",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.ezugi_rollbacks_id_seq'::regclass)",
+      "pk": "ezugi_rollbacks",
+      "fk": "ezugi_rollbacks"
+    },
+    "transaction": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 50,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

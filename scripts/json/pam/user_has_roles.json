@@ -1,0 +1,30 @@
+{
+  "name": "user_has_roles",
+  "description": "No description available",
+  "columns": {
+    "role_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "user_has_roles",
+      "fk": "roles_dot"
+    },
+    "model_type": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": "user_has_roles",
+      "fk": "user_has_roles"
+    },
+    "model_id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "user_has_roles",
+      "fk": "user_has_roles"
+    }
+  }
+}

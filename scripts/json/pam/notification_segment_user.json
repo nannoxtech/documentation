@@ -1,0 +1,22 @@
+{
+  "name": "notification_segment_user",
+  "description": "No description available",
+  "columns": {
+    "notification_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "notification_segment_user",
+      "fk": "notification_segment_user"
+    },
+    "segment_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "notification_segment_user",
+      "fk": "segments"
+    }
+  }
+}

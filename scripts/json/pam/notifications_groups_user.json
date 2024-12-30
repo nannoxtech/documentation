@@ -1,0 +1,22 @@
+{
+  "name": "notifications_groups_user",
+  "description": "No description available",
+  "columns": {
+    "notification_group_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "notifications_groups_user",
+      "fk": "notifications_groups_user"
+    },
+    "user_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "notifications_groups_user",
+      "fk": "users"
+    }
+  }
+}

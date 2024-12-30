@@ -1,0 +1,22 @@
+{
+  "name": "levels",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('payments.levels_id_seq'::regclass)",
+      "pk": "levels",
+      "fk": "levels"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 20,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

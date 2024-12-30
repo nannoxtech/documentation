@@ -1,0 +1,54 @@
+{
+  "name": "sessions",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": "sessions"
+    },
+    "user_id": {
+      "type": "bigint",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": "users"
+    },
+    "ip_address": {
+      "type": "character varying",
+      "nullable": true,
+      "maxLength": 45,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "user_agent": {
+      "type": "text",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "payload": {
+      "type": "text",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "last_activity": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

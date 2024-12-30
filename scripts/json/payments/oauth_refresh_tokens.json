@@ -1,0 +1,38 @@
+{
+  "name": "oauth_refresh_tokens",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 100,
+      "default": null,
+      "pk": "oauth_refresh_tokens",
+      "fk": "oauth_refresh_tokens"
+    },
+    "access_token_id": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 100,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "revoked": {
+      "type": "boolean",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "expires_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

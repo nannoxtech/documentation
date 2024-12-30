@@ -1,0 +1,38 @@
+{
+  "name": "countries",
+  "description": "No description available",
+  "columns": {
+    "iso": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 2,
+      "default": null,
+      "pk": "countries",
+      "fk": "countries"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 100,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

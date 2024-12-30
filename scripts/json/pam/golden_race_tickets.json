@@ -1,0 +1,142 @@
+{
+  "name": "golden_race_tickets",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.golden_race_tickets_id_seq'::regclass)",
+      "pk": "golden_race_tickets",
+      "fk": "golden_race_tickets"
+    },
+    "amount": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "transaction_type_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "golden_race_tickets",
+      "fk": "transaction_types"
+    },
+    "wallet_transaction": {
+      "type": "bigint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "balance": {
+      "type": "double precision",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "user_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "golden_race_tickets",
+      "fk": "users"
+    },
+    "currency_iso": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 3,
+      "default": null,
+      "pk": "golden_race_tickets",
+      "fk": "currencies"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "golden_race_tickets",
+      "fk": "whitelabels"
+    },
+    "game_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "golden_race_tickets",
+      "fk": "games"
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "transaction_id": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 200,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "request_id": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 200,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "token": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 200,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "bet_type": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 10,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "game_cycle": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 200,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "game_cycle_closed": {
+      "type": "boolean",
+      "nullable": false,
+      "maxLength": null,
+      "default": "false",
+      "pk": null,
+      "fk": null
+    }
+  }
+}

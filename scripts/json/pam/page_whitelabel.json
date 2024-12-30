@@ -1,0 +1,78 @@
+{
+  "name": "page_whitelabel",
+  "description": "No description available",
+  "columns": {
+    "page_id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "page_whitelabel",
+      "fk": "page_whitelabel"
+    },
+    "whitelabel_id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": "page_whitelabel",
+      "fk": "whitelabels"
+    },
+    "language": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 5,
+      "default": null,
+      "pk": "page_whitelabel",
+      "fk": "page_whitelabel"
+    },
+    "title": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 255,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "content": {
+      "type": "text",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "status": {
+      "type": "boolean",
+      "nullable": false,
+      "maxLength": null,
+      "default": "true",
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "order": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "'0'::smallint",
+      "pk": null,
+      "fk": null
+    }
+  }
+}

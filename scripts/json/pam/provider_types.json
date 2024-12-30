@@ -1,0 +1,22 @@
+{
+  "name": "provider_types",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "smallint",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('pam.provider_types_id_seq'::regclass)",
+      "pk": "provider_types",
+      "fk": "provider_types"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 20,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}

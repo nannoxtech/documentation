@@ -1,0 +1,70 @@
+{
+  "name": "banks",
+  "description": "No description available",
+  "columns": {
+    "id": {
+      "type": "integer",
+      "nullable": false,
+      "maxLength": null,
+      "default": "nextval('payments.banks_id_seq'::regclass)",
+      "pk": "banks",
+      "fk": "banks"
+    },
+    "name": {
+      "type": "character varying",
+      "nullable": false,
+      "maxLength": 100,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "country_iso": {
+      "type": "character",
+      "nullable": false,
+      "maxLength": 2,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "status": {
+      "type": "boolean",
+      "nullable": false,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "created_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "updated_at": {
+      "type": "timestamp without time zone",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    },
+    "currency_iso": {
+      "type": "character",
+      "nullable": true,
+      "maxLength": 3,
+      "default": null,
+      "pk": "banks",
+      "fk": "currencies"
+    },
+    "data": {
+      "type": "json",
+      "nullable": true,
+      "maxLength": null,
+      "default": null,
+      "pk": null,
+      "fk": null
+    }
+  }
+}
